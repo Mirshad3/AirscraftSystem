@@ -19,28 +19,28 @@ namespace AircraftSystem.Context
                 new Aircraft()
                 {
                     Id = 1,
-                    Make = "Test Emp1",
-                    Model = "Test@test.com",
-                    Location = "Test1",
-                    Registration = "Test@test.com",
+                    Make = "Beeing",
+                    Model = "777-300ER",
+                    Location = "London Gatwick",
+                    Registration = "G-RNAC",
                     DateAndTime = System.DateTime.Now
                 },
                  new Aircraft()
                  {
                      Id = 2,
-                     Make = "Test Emp1",
-                     Model = "Test@test.com",
-                     Location = "Test1",
-                     Registration = "Test@test.com",
+                   Make = "Teeing",
+                    Model = "345-890ER",
+                    Location = "Colombo Lanka",
+                    Registration = "G-MRAC",
                      DateAndTime = System.DateTime.Now
                  },
                   new Aircraft()
                   {
                       Id = 3,
-                      Make = "Test Emp1",
-                      Model = "Test@test.com",
-                      Location = "Test1",
-                      Registration = "Test@test.com",
+                      Make = "Gamin",
+                    Model = "879-300GM",
+                    Location = "India Delli",
+                    Registration = "I-DELL",
                       DateAndTime = System.DateTime.Now
                   });
 
