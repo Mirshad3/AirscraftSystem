@@ -1,0 +1,50 @@
+﻿@model AircraftSystem.Models.Aircraft
+
+ 
+<div>
+     
+    <dl class="row">
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Make)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Make)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Registration)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Registration)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.DateAndTime)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.DateAndTime)
+        </dd>
+         <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.AircraftPicture)
+        </dt>
+        <dd class = "col-sm-8">
+           <img src="/Uploads/@(Model.Make + "_" + Model.Model+ ".jpg")"  class="card-img-top" >
+     
+        </dd>
+              
+    </dl>
+</div>
+<div>
+     <a asp-action="Edit" asp-route-id="@Model.Id"  class="btn btn-success">Edit</a>   
+     <a asp-action="Delete" asp-route-id="@Model.Id"  class="btn btn-danger">Delete</a>
+</div>
